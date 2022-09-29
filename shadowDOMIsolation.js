@@ -33,10 +33,10 @@ function shadowDOMIsolation(contentHtmlString) {
 // 测试
 const shadowDOMSection = document.querySelector('#shadow-dom');
 
-const appElement = shadowDOMIsolation(`
+const wrappedShadowDOMAppElement = shadowDOMIsolation(`
   <div class="wrapper">
-    <p>Shadow DOM</p>
+    <p>Shadow DOM Isolation</p>
   </div>
 `);
 
-shadowDOMSection.appendChild(appElement);
+shadowDOMSection.appendChild(wrappedShadowDOMAppElement);

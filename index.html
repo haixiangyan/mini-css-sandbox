@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>样式隔离沙箱</title>
+  <style>
+    p {
+        color: red;
+    }
+  </style>
+</head>
+<body>
+<h1>Virtual DOM 隔离</h1>
+<div id="virtual-dom">
+  <p>虚拟DOM隔离</p>
+</div>
+
+<h1>Scoped CSS 隔离</h1>
+<div id="scoped-css">
+  <p>Scoped CSS隔离</p>
+</div>
+
+<script src="scopedCSSIsolation.js"></script>
+<script src="virtualDOMIsolation.js"></script>
+</body>
+</html>

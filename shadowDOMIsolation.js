@@ -30,13 +30,13 @@ function shadowDOMIsolation(contentHtmlString) {
   return appElement;
 }
 
-// 测试
-const shadowDOMSection = document.querySelector('#shadow-dom');
-
-const wrappedShadowDOMAppElement = shadowDOMIsolation(`
-  <div class="wrapper">
-    <p>Shadow DOM Isolation</p>
-  </div>
-`);
-
-shadowDOMSection.appendChild(wrappedShadowDOMAppElement);
+// // 测试
+// const shadowDOMSection = document.querySelector('#shadow-dom');
+//
+// const wrappedShadowDOMAppElement = shadowDOMIsolation(`
+//   <div class="wrapper">
+//     <p>Shadow DOM Isolation</p>
+//   </div>
+// `);
+//
+// shadowDOMSection.appendChild(wrappedShadowDOMAppElement);

@@ -88,14 +88,14 @@ function scopedCSSIsolation(appName, contentHtmlString) {
   return appElement;
 }
 
-// 测试
-const scopedCSSSection = document.querySelector('#scoped-css');
-
-const wrappedScopedCSSAppElement = scopedCSSIsolation('MyApp', `
-  <div class="wrapper">
-    <style>p { color: blue }</style>
-    <p>Scoped CSS Isolation</p>
-  </div>
-`);
-
-scopedCSSSection.appendChild(wrappedScopedCSSAppElement);
+// // 测试
+// const scopedCSSSection = document.querySelector('#scoped-css');
+//
+// const wrappedScopedCSSAppElement = scopedCSSIsolation('MyApp', `
+//   <div class="wrapper">
+//     <style>p { color: blue }</style>
+//     <p>Scoped CSS Isolation</p>
+//   </div>
+// `);
+//
+// scopedCSSSection.appendChild(wrappedScopedCSSAppElement);

@@ -10,15 +10,20 @@
   </style>
 </head>
 <body>
-<h1>Virtual DOM 隔离</h1>
-<div id="shadow-dom"></div>
+<h1>Shadow DOM 隔离</h1>
+<isolation-content data-app-name="Sub1" data-isolation-mode="shadowDOM">
+  <p>Shadow DOM Isolation</p>
+</isolation-content>
 
 <h1>Scoped CSS 隔离</h1>
-<div id="scoped-css">
-</div>
+<isolation-content data-app-name="Sub2" data-isolation-mode="scopedCSS">
+  <style>p { color: blue }</style>
+  <p>Scoped CSS Isolation</p>
+</isolation-content>
 <p>额外的文本</p>
 
 <script src="scopedCSSIsolation.js"></script>
 <script src="shadowDOMIsolation.js"></script>
+<script src="Isolation.js"></script>
 </body>
 </html>
